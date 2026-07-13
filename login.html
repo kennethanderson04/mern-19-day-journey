@@ -2,59 +2,155 @@
 <html>
 <head>
 <meta charset = "UTF-8">
-<title>login form</title>
+<title> html playground </title>
 </head>
 
 <body>
 <header>
-<h1>LOGIN FORM</h1>
+<h1> html practice</h1>
+<p> plain html skeleton </p>
 </header>
 
+<nav>
+<a href = "#text">text</a>|
+<a href = "#lists">lists</a>|
+<a href = "#links">hyperlinks</a>|
+<a href = "#media">media</a>|
+<a href = "#table">table</a>|
+<a href = "#article">article</a>
+</nav>
+
 <main>
-	<form action = "#" method="POST">
-	
-	<fieldset>
-		<legend>Details</legend>
-		<label for="username">Username</label><br>
-		<input type = "text" id="username" name="username" placeholder="enter name" required><br><br>
-		
-		<label for="mail">E-mail address</label>
-		<input type = "email" id="mail" name="email" placeholder="example@mail.com" required><br><br>
-		
-		<label for="pass">Password</label>
-		<input type="password" id="pass" name="password" placeholder="enter password" required><br><br>
-		
-	</fieldset><br>
-	
-	<fieldset>
-		<legend>Personal info</legend>
-		
-		<p>Gender</p>
-			<input type="radio" id="male" name="gender" value="male">
-			<label for="male">Male</label>
-		
-			<input type="radio" id="female" name="gender" value="female">
-			<label for="female">Female</label>
-		<br><br>
-		<label for="country">Country</label>
-		<select id="country" name="country">
-			<option value="">--select country--</option>
-			<option value="in">India</option>
-			<option value="us">USA</option>
-			<option value="uk">UK</option>
-		</select>
-		
-		<p>Interests</p>
-		<input type="checkbox" id="html" name="preferences" value="html">
-		<label for="html">HTML5</label>
-		<input type="checkbox" id="css" name="preferences" value="css">
-		<label for="css">CSS</label>
-	</fieldset>
-	<br>
-	<button type="submit">SUBMIT</button>
-	</form>
+
+<section id = "text">
+<h2>1.text elem</h2>
+<p> methods using &lt;p&gt; tag. use &lt";" and &gt';' for the brackets</p>
+<p>
+<strong>"strong"</strong><br>
+<em>"em"phasized text</em><br>
+<mark>"mark" for highlighted text</mark><br>
+<small>"small" text</small><br>
+</p>
+<hr>
+</section>
+
+<section id = "lists">
+<h2>Lists</h2>
+
+<h3>ordered lists</h3>
+<ol>
+<li>tomato</li>
+<li>lettuce</li>
+<li>mayo</li>
+</ol>
+
+<h3>unordered lists</h3>
+<ul>
+<li>apple</li>
+<li>orange</li>
+<li>watermelon</li>
+</ul>
+
+<h3>nested lists</h3>
+<ul>
+<li>frontend</li>
+	<ol>
+	<li>html</li>
+	<li>css</li>
+	</ol>
+<li>backend</li>
+	<ol>
+	<li>node.js</li>
+	<li>mongodb</li>
+	</ol>
+</ul>
+<hr>
+</section>
+
+<section id = "links">
+<h2> Hyperlinks </h2>
+<p>internal links: <a href = "#lists">go to list section</a> 
+</p>
+<p>external links: 
+<a href = "https://chatgpt.com/" target ="_blank" rel = "noopener noreferrer">chatgpt</a>
+</p>
+<p>go to another page within the website:
+<a href = "login.html">go to "href = login.html"</a>
+</p>
+<hr>
+</section>
+
+<section id = "media">
+<h2> images and media </h>
+
+<h3>image</h3>
+<img src = "https://i.pinimg.com/736x/d8/81/ab/d881ab3ed375e7737045d84c08c92741.jpg" alt = "cross" width = "300" height = "300">
+<br>
+
+<h3>audio</h3>  
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<br>
+
+<h3>video</h3>
+<video controls width = "500">
+<source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+</video>
+<hr>
+</section>
+
+<section id = "table">
+<h2> Table </h2>
+<table border = "1">
+<thead>
+<tr>
+    <th>Day</th>
+    <th>Morning</th>
+    <th>Evening</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>Mon</td>
+	<td rowspan = "2">html</td>
+	<td> revision</td>
+</tr>
+
+<tr>
+	<td>Tue</td>
+	<td>project</td>
+</tr>
+
+<tr>
+	<td>Wed</td>
+	<td colspan = "2">project</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+</section>
+
+<article id = "article">
+<h2> article </h2>
+<p>
+Usage of tags like header, footer, section, main, nav and aside describe the meaning of the content, not just the appearance. this helps in understanding the page structure.
+</p>
+</article>
+
+<aside>
+<h2>aside tag</h2>
+<p>
+related content but separated from the main flow.
+</p>
+</aside>
+
 </main>
 
-
+<footer>
+<p><a href = "login.html">go to login page</a></p>
+</footer>
 </body>
 </html>
