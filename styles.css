@@ -1,0 +1,110 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+}
+
+h2 {
+  color: rgb(68, 139, 167);
+  font-size: 24px;
+}
+
+h3 {
+  color: rgb(109, 131, 161);
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+}
+
+
+header {
+  background-color: rgb(31, 99, 99);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+nav {
+  background-color: rgb(80, 52, 107);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* DESCENDANT SELECTOR — targets <a> tags only when inside <nav> */
+nav a {
+  color: rgb(98, 83, 190);
+}
+
+
+section {
+  background-color: rgb(112, 45, 94);
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+/*id*/
+#media {
+  background-color: rgb(75, 75, 160);
+}
+
+
+table {
+  margin-top: 10px;
+  background-color: white;
+}
+
+th {
+  background-color: rgb(105, 159, 159);
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+}
+
+td {
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+img {
+  border: 2px solid gray;
+  margin: 10px 0;
+}
+
+
+article {
+  background-color: rgb(140, 58, 69);
+  padding: 15px;
+  margin: 15px;
+}
+
+aside {
+  background-color: rgb(229, 208, 125);
+  padding: 15px;
+  margin: 15px;
+}
+
+
+footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+}
