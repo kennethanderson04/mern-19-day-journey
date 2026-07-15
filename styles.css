@@ -1,14 +1,13 @@
 body {
   font-size: 16px;
-  color: black;
-  background-color: white;
-  margin: 0;
-  padding: 0;
+  background-color: rgb(231, 210, 210);
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
-  color: white;
-  font-size: 32px;
+  color: rgb(15, 231, 131);
+  font-size: 35px;
 }
 
 h2 {
@@ -34,30 +33,33 @@ header {
 }
 
 nav {
-  background-color: rgb(80, 52, 107);
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
+  background-color: rgb(41, 10, 70);
+  padding: 20px;
+  margin:20px 0px;
+  font-size: 20px;
 }
 
-/* DESCENDANT SELECTOR — targets <a> tags only when inside <nav> */
+/* DESCENDANT SELECTOR — targets <a> tags that's only inside <nav> */
 nav a {
-  color: rgb(98, 83, 190);
+  color: rgb(77, 55, 219);
 }
 
 
 section {
   background-color: rgb(112, 45, 94);
-  margin: 15px;
-  padding: 15px;
-  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  border: 10px solid gray;
 }
 
 /*id*/
-#media {
-  background-color: rgb(75, 75, 160);
+#media-section {
+  background-color: rgb(21, 21, 142);
 }
 
+.sectiona {
+  background-color: rgb(62, 113, 100);
+}
 
 table {
   margin-top: 10px;
