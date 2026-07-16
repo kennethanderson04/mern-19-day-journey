@@ -3,15 +3,14 @@
 <head>
 <meta charset = "UTF-8">
 <title>login form</title>
+<script src="script.js" defer></script>
 </head>
-
 <body>
 <header>
 <h1>LOGIN FORM</h1>
 </header>
-
 <main>
-	<form action = "#" method="POST">
+	<form id="loginForm" action = "#" method="POST">
 	
 	<fieldset>
 		<legend>Details</legend>
@@ -22,7 +21,9 @@
 		<input type = "email" id="mail" name="email" placeholder="example@mail.com" required><br><br>
 		
 		<label for="pass">Password</label>
-		<input type="password" id="pass" name="password" placeholder="enter password" required><br><br>
+		<input type="password" id="pass" name="password" placeholder="enter password" required><br>
+		<input type="checkbox" id="showPass">
+		<label for="showPass">Show Password</label><br><br>
 		
 	</fieldset><br>
 	
@@ -51,10 +52,12 @@
 		<label for="css">CSS</label>
 	</fieldset>
 	<br>
+
+	<p id="message"></p>
+
 	<button type="submit">SUBMIT</button>
+	<button type="button" id="resetBtn">RESET</button>
 	</form>
 </main>
-
-
 </body>
 </html>
