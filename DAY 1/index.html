@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells the browser this is an HTML5 document -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Element Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!--HEADER: introductory content for the page-->
+  <header>
+    <h1>HTML5 Element Showcase</h1>
+    <p style="color:rgb(174, 236, 41)">A plain HTML page demonstrating text, lists, links, media, tables, forms and semantic tags.</p>
+  </header>
+
+  <!--NAV: main navigation links-->
+  <nav>
+    <a href="#text-section">Text</a> |
+    <a href="#lists-section">Lists</a> |
+    <a href="#links-section">Links</a> |
+    <a href="#media-section">Media</a> |
+    <a href="#table-section">Table</a> |
+    <a href="#article-section">Article</a> |
+    <a href="login.html">Login Form</a>
+  </nav>
+
+  <!--MAIN: the primary content of the page-->
+  <main>
+
+    <!-- SECTION: text elements -->
+    <section id="text-section">
+      <h2>1. Text Elements</h2>
+      <p>This is a normal paragraph using the &lt;p&gt; tag.</p>
+      <p>
+        <strong>Strong / important text</strong>,
+        <em>emphasized text</em>,
+        <mark>highlighted text</mark>,
+        <small>small text</small>,
+        <del>deleted text</del>
+      </p>
+      <p>First line <br> Second line (using &lt;br&gt;)</p>
+      <hr>
+      <p>The line above was made with the &lt;hr&gt; tag.</p>
+    </section>
+
+    <!-- SECTION: lists -->
+    <section id="lists-section">
+      <h2>2. Lists</h2>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Plan the page structure</li>
+        <li>Add semantic tags</li>
+        <li>Test in a browser</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Nested List</h3>
+      <ul>
+        <li>Frontend
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </li>
+        <li>Backend
+          <ul>
+            <li>Node.js</li>
+            <li>Databases</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION: hyperlinks -->
+    <section id="links-section" class="sectiona">
+      <h2>3. Hyperlinks</h2>
+
+      <p>Internal anchor link (jumps within this page):
+        <a href="#table-section">Go to the Table section</a>
+      </p>
+
+      <p>External link (opens in a new tab):
+        <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
+          chatgpt
+        </a>
+      </p>
+
+      <p>Link to a separate page containing a login form:
+        <a href="login.html">Go to Login Form Page</a>
+      </p>
+    </section>
+
+    <!-- SECTION: media, using external URLs so images/audio/video load from anywhere the page is hosted -->
+    <section id="media-section">
+      <h2>4. Images &amp; Media</h2>
+
+      <h3>Image</h3>
+      <img src="https://picsum.photos/id/1015/500/300" alt="Mountain river landscape" width="500" height="300">
+      <p>Image loaded using the &lt;img&gt; tag from an external URL.</p>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video width="480" controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- SECTION: table -->
+    <section id="table-section">
+      <h2>5. Table</h2>
+      <table border="1">
+        <caption>Weekly Study Plan</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Evening</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mon</td>
+            <td rowspan="2">HTML Practice</td>
+            <td>Revision</td>
+          </tr>
+          <tr>
+            <td>Tue</td>
+            <td>Revision</td>
+          </tr>
+          <tr>
+            <td>Wed</td>
+            <td colspan="2">Full Mock Project Build</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ARTICLE + ASIDE -->
+    <article id="article-section">
+      <h2>6. Article Example</h2>
+      <h3>Why Semantic HTML Matters</h3>
+      <p>
+        Semantic tags like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;,
+        &lt;section&gt;, &lt;aside&gt;, and &lt;footer&gt; describe the meaning of content,
+        not just its appearance. This helps screen readers, search engines, and other
+        developers understand the page structure.
+      </p>
+
+      <!-- ASIDE: content related but separate from the main flow -->
+      <aside>
+        <h3>Related Tip</h3>
+        <p>Use only one &lt;main&gt; and ideally only one &lt;h1&gt; per page.</p>
+      </aside>
+    </article>
+
+  </main>
+
+  <!--FOOTER: closing content of the page-->
+  <footer>
+    <p> 2026 HTML5 Element Showcase </p>
+    <p><a href="login.html">Go to Login Form</a></p>
+  </footer>
+
+</body>
+</html>

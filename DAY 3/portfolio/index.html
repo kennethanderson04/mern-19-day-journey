@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta viewport ="width=device_width, initial-scale=1.0">
+        <title> MY PORTFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <main>
+        <header class = "site-header">
+            <p class="logo">Kenneth.</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="hero" class="hero">
+            <h1>Hi, I'm Kenneth Anderson</h1>
+            <p>A passionate web developer specializing in creating dynamic and user-friendly applications.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-text">
+            <h2>About Me</h2>
+            <p>I am a web developer with a strong background in front-end and back-end technologies. I enjoy building applications that solve real-world problems and provide great user experiences.</p>
+            </div>
+            <aside class="about-aside">
+                <h3>Quick facts</h3>
+                <ul>
+                    <li><strong>Learning:</strong> CSS, JavaScript, MERN</li>
+                    <li><strong>Location:</strong> Coimbatore, TamilNadu</li>
+                    <li><strong>Goal:</strong> Full Stack Developer</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <article class="project-card">
+                    <h3>Semantic Compression using Edge AI</h3>
+                    <p>A mobile application that allows maritime users to compress and send data packets through L-band satellites.</p>
+                    </article>
+                </div>
+                <div class="project-item">
+                    <article class="project-card">
+                    <h3>AI Interview Platform</h3>
+                    <p>An interview platform that provides a seamless interview experience using AI for company recruiters and job seekers.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Reason for Contact</label>
+                    <select id="reason" name="reason">
+                    <option value="hire">Hiring Opportunity</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <p class="field-label">Preferred Contact Method</p>
+                <div class="radio-group">
+                    <input type="radio" id="contact-email" name="contactMethod" value="email" checked>
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contactMethod" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Kenneth Anderson. Made with html5 &amp; CSS3.</p>
+        <div class="socials">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
