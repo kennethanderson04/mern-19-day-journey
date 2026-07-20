@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>demo html</title>
+    </head>
+
+    <body>
+        <h1 style="color:green">Images Table</h1>
+
+        <section id="imageTable">
+            <table border = "1">
+                <tr>
+                    <th>Image</th>
+                    <th>link</th>
+                </tr>
+                <tr>
+                    <td><img src = "https://m.media-amazon.com/images/I/71oDTJru50L.jpg" alt="Demo Image" width="100" height="100"></td>
+                    <td><a href="https://m.media-amazon.com/images/I/71oDTJru50L.jpg">m.media-amazon.com/images/I/71oDTJru50L.jpg</a></td>
+                </tr>
+                <tr>
+                    <td><img src ="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" width="100" height="100"></td>
+                    <td><a href="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg">Nature Image</a></td>
+                </tr>
+                <tr>
+                    <td><img src = "https://freenaturestock.com/wp-content/uploads/freenaturestock-2335-768x1152.jpg" width="100" height="100"></td>
+                    <td><a href="https://freenaturestock.com/wp-content/uploads/freenaturestock-2335-768x1152.jpg">Free Nature Image</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.pinimg.com/236x/67/1e/70/671e7048c85883fbcfb3aff70282e094.jpg" width="100" height="100"></td>
+                    <td><a href="https://i.pinimg.com/236x/67/1e/70/671e7048c85883fbcfb3aff70282e094.jpg">Pin Image</a></td>
+                </tr>
+            </table>
+        </section>
+        <button type="button" id="visibility">Toggle Visibility</button>
+
+        <script>
+            const visibilityButton = document.getElementById('visibility');
+            const imgtable = document.getElementById('imageTable');
+
+            visibilityButton.addEventListener('click', function(){
+                if(imgtable.style.display === 'none'){ 
+                    imgtable.style.display = 'table';
+                } else {
+                    imgtable.style.display = 'none';
+                }
+            })
+        </script>
+    </body>
+</html>
