@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8";>
+        <title>Login form</title>
+        <script src = "async.js" defer></script>
+        <style>
+            .*{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                background-color:rgb(230, 230, 201);
+                font-family:Arial, sans-serif;
+                padding: 20px;
+
+            }
+
+            h1{
+                text-align:center;
+                margin-bottom: 20px;
+            }
+
+            form{
+                width: 500px;
+                margin: auto;
+                border: 2px solid black;
+                padding: 20px;
+                border-radius: 10px;
+                background-color:white;
+            }
+
+            fieldset{
+                padding: 10px;
+                border-radius:10px;
+            }
+
+            legend{
+                font-weight:bold;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>LOGIN PAGE</h1>
+        </header>
+
+        <main>
+        <form id="loginForm">
+        <fieldset>
+            <legend>Details</legend>
+            <label for="username">Username:</label>
+            <input type ="text" id="username" name="username" placeholder = "enter name" required><br><br>
+
+            <label for="mail">E-mail: </label>
+            <input type="email" id="mail" name="email" placeholder="example@mail.com" required><br><br>
+
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="password" placeholder="enter password" required><br>
+            
+            <input type="checkbox" id="showPass">
+            <label for="showPass">Show Password</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>Gender:</p>
+                <input type = "radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+            
+            <label for="country">Country: </label>
+            <select id="country" name="country">
+                <option value="">--select country--</option>
+                <option value="in">India</option>
+                <option value="us">United States of America</option>
+                <option value="uk">United Kingdom</option>
+            </select><br><br>
+
+            <p>Interests:</p>
+            <input type = "checkbox" id="html" name="interests" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="interests" value="css">
+            <label for="css">CSS</label>
+        </fieldset>
+        <br>
+
+        <p id="message"></p>
+        
+
+        <button type="submit" id="sub">SUBMIT</button>
+        <button type="button" id="resetBtn">RESET</button>
+
+        </form>
+        </main>
+    </body>
+</html>
